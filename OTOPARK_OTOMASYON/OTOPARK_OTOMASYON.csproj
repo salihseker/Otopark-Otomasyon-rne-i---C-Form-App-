@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34044C43-EBAE-4CEE-AA68-367137D67492}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OTOPARK_OTOMASYON</RootNamespace>
+    <AssemblyName>OTOPARK_OTOMASYON</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abonelikler_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abonelikler_guncelle.Designer.cs">
+      <DependentUpon>abonelikler_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="abone_arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abone_arama.Designer.cs">
+      <DependentUpon>abone_arama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="abone_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abone_guncelle.Designer.cs">
+      <DependentUpon>abone_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aktif_abone_rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aktif_abone_rapor.Designer.cs">
+      <DependentUpon>aktif_abone_rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="araccikis_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="araccikis_guncelle.Designer.cs">
+      <DependentUpon>araccikis_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aracgiriscikis_rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aracgiriscikis_rapor.Designer.cs">
+      <DependentUpon>aracgiriscikis_rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aracgiris_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aracgiris_guncelle.Designer.cs">
+      <DependentUpon>aracgiris_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aylik_kazanc_rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aylik_kazanc_rapor.Designer.cs">
+      <DependentUpon>aylik_kazanc_rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csDatabaseSql.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otoparktaki_arac_rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otoparktaki_arac_rapor.Designer.cs">
+      <DependentUpon>otoparktaki_arac_rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tarifeler_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarifeler_guncelle.Designer.cs">
+      <DependentUpon>tarifeler_guncelle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="abonelikler_guncelle.resx">
+      <DependentUpon>abonelikler_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="abone_arama.resx">
+      <DependentUpon>abone_arama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="abone_guncelle.resx">
+      <DependentUpon>abone_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aktif_abone_rapor.resx">
+      <DependentUpon>aktif_abone_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="araccikis_guncelle.resx">
+      <DependentUpon>araccikis_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aracgiriscikis_rapor.resx">
+      <DependentUpon>aracgiriscikis_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aracgiris_guncelle.resx">
+      <DependentUpon>aracgiris_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aylik_kazanc_rapor.resx">
+      <DependentUpon>aylik_kazanc_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otoparktaki_arac_rapor.resx">
+      <DependentUpon>otoparktaki_arac_rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="tarifeler_guncelle.resx">
+      <DependentUpon>tarifeler_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Logo.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
